@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Веб-разработчик Boris Medvedev | Создание сайтов, сервисов и
+    приложений</title>
+  <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+
+
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="./favicon/favicon-16x16.png">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+    rel='stylesheet'>
+
+
+  <script defer src="./libs/inputmask.min.js"></script>
+  <script type="module" defer src="js/script.js"></script>
+
+  <!-- Yandex.Metrika counter -->
+  <script>
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(96043314, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+
+  <!-- /Yandex.Metrika counter -->
+
+  <!-- Varioqub experiments -->
+  <script type="text/javascript">
+    (function (e, x, pe, r, i, me, nt) {
+      e[i] = e[i] || function () { (e[i].a = e[i].a || []).push(arguments) },
+        me = x.createElement(pe), me.async = 1, me.src = r, nt = x.getElementsByTagName(pe)[0], nt.parentNode.insertBefore(me, nt)
+    })
+      (window, document, 'script', 'https://abt.s3.yandex.net/expjs/latest/exp.js', 'ymab');
+    ymab('metrika.96043314', 'init'/*, {clientFeatures}, {callback}*/);
+  </script>
+
+  <meta name="yandex-verification" content="498b2c75b8f32214">
+
+  <meta name="keywords"
+    content="веб разработка, веб-дизайн, фронтенд разработка, бэкенд разработка, создание сайтов">
+  <meta name="description"
+    content="Веб-разработчик предлагает услуги по созданию современных и функциональных сайтов. Опыт работы более 2 лет.">
+  <meta property="og:image" content="./images/logo.svg">
+
+</head>
+
+<body class="page__body">
+
+  <header class="header" id="header">
+    <a class="logo" href="">
+      <img class="logo__img" src="./images/logo.svg"
+        alt="логотип фронтенд разработк">
+    </a>
+    <box-icon class="bx bx-menu" id="menu-icon" name='menu'></box-icon>
+
+    <nav class="navbar">
+      <a class="navbar__link" href="#home">Главная</a>
+      <a class="navbar__link" href="#about">Обо мне</a>
+      <a class="navbar__link" href="#education">Образование</a>
+      <a class="navbar__link" href="#skills">Навыки</a>
+      <a class="navbar__link" href="#portfolio">Примеры работ</a>
+      <a class="navbar__link" href="#contact">Контакты</a>
+
+      <span class="navbar-active"></span>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="home" id="home">
+
+      <div class="home__content">
+        <h1 class="home__title">
+          привет, меня зовут Борис
+        </h1>
+        <div class="home__text">
+          <h3 class="home__text-animate">
+            я веб-разработчик
+          </h3>
+        </div>
+        <p class="home__descr">
+           я специализируюсь на разработке и верстке веб-сайтов различной сложности с использованием передовых технологий, таких как HTML, CSS и JavaScript
+        </p>
+
+        <div class="btn-box">
+          <a class="btn home__btn" href="#contact">Нанять меня</a>
+          <a class="btn home__btn" href="#contact">Напиши мне</a>
+        </div>
+      </div>
+      <div class="social">
+        <a class="social__link" href="https://t.me/BMEDV" target="_blank">
+          <i class='bx bxl-telegram'></i>
+        </a>
+        <a class="social__link" href="https://t.me/BMEDV" target="_blank">
+          <i class='bx bxl-discord-alt'></i>
+        </a>
+        <a class="social__link" href="https://vk.com/medvedevbn"
+          target="_blank">
+          <i class='bx bxl-vk'></i>
+        </a>
+      </div>
+
+      <div class="home__img-hover"></div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="about__title title">
+        Обо <span class="title-decor">мне</span>
+      </h2>
+
+      <div class="about__img">
+        <img class="about__img-decor" src="./images/about.jpg" alt="привет, меня зовут Борис
+            я веб-разработчик">
+        <span class="circle-span"></span>
+      </div>
+
+      <div class="about__content">
+        <h3 class="about__subtitle">
+          веб-разработчик !
+        </h3>
+        <p class="about__descr">
+          специализируюсь на&nbsp;разработке и&nbsp;верстке веб-сайтов различной сложности с&nbsp;использованием передовых технологий, таких как HTML, CSS и&nbsp;JavaScript. На&nbsp;текущий момент я&nbsp;проживаю в&nbsp;городе Иваново. Мое профессиональное образование получено в&nbsp;рамках курса &laquo;Профессия Веб-разработчик&raquo;, проведенного образовательной платформой Skillbox.
+Помимо этого, я&nbsp;обладаю глубокой профессиональной компетенцией в&nbsp;работе с&nbsp;платформой Tilda, что позволяет мне создавать эстетически привлекательные и&nbsp;функциональные веб-сайты. Мои навыки включают в&nbsp;себя создание пользовательских блоков, настройку внешнего вида сайтов, обеспечение их&nbsp;адаптивности к&nbsp;любым устройствам, интеграцию сторонних сервисов и&nbsp;тщательную настройку SEO-оптимизации. С&nbsp;радостью готов оказать помощь в&nbsp;создании вашего веб-сайта на&nbsp;платформе Tilda.
+        </p>
+
+        <!-- <div class="btn-box btns">
+          <a class="btn about__btn" href="">Подробнее</a>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h2 class="title">
+        Образование <span class="title-decor"> и опыт</span>
+      </h2>
+
+      <div class="education__row">
+
+        <div class="education__column">
+          <h3 class="education__title">
+            Образование
+          </h3>
+
+          <div class="education__box">
+
+            <div class="education__content">
+              <div class="content">
+                <div class="content__year">
+                  <i class='bx bxs-calendar'></i>
+                  2009-2015
+                </div>
+                <h3 class="content__title">ИГЭУ </h3>
+                <p class="content__descr">
+                  &laquo;Промышленная теплоэнергетика&raquo;,
+                  &laquo;Теоретические основы
+                  теплотехники и&nbsp;гидромеханика&raquo;
+                  и&nbsp;&laquo;Управление и&nbsp;системный
+                  анализ теплоэнергетических и&nbsp;социотехнических
+                  комплексов&raquo;,
+                  Центр практической подготовки. Инженер.
+                </p>
+
+              </div>
+            </div>
+
+            <div class="education__content">
+              <div class="content">
+                <div class="content__year">
+                  <i class='bx bxs-calendar'></i>
+                  2018-2020
+                </div>
+                <h3 class="content__title">Студент Skillbox</h3>
+                <p class="content__descr">
+                  Skillbox&nbsp;&mdash; &#8470;&nbsp;1&nbsp;по&nbsp;качеству
+                  обучения. Вся теория записана с
+                  топовыми экспертами рынка, а&nbsp;практика максимально
+                  приближена
+                  к
+                  реальным рабочим задачам. Послушайте, что говорят&nbsp;те,
+                  кто уже
+                  достиг своих целей вместе со&nbsp;Skillbox.
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="education__column">
+          <h3 class="education__title">
+            Oпыт
+          </h3>
+
+          <div class="education__box">
+
+            <div class="education__content">
+              <div class="content">
+                <div class="content__year">
+                  <i class='bx bxs-calendar'></i>
+                  2021-2022
+                </div>
+                <h3 class="content__title">Веб-разработчик</h3>
+                <p class="content__descr">
+                  Веб-разработчик создаёт сайты, сервисы и&nbsp;приложения,
+                  которыми
+                  мы&nbsp;ежедневно пользуемся. Он&nbsp;разрабатывает
+                  интернет-магазины,
+                  онлайн-банки, поисковики, карты и&nbsp;почтовые клиенты.
+                  Веб-разработчик проектирует внешний вид сайта.
+                </p>
+
+              </div>
+            </div>
+
+            <div class="education__content">
+              <div class="content">
+                <div class="content__year">
+                  <i class='bx bxs-calendar'></i>
+                  2022-2024
+                </div>
+                <h3 class="content__title">Фриланс</h3>
+                <p class="content__descr">
+                  Веб-разработчик  
+
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="title">
+        Примеры работ
+      </h2>
+
+      <div class="portfolio__wrapper">
+
+         <article class="card">
+          <a class="card__link" href="https://medvedevboris.ru/main.html"
+            target="_blank">
+            <img src="./images/parallax.png" alt="Parallax Slider HTML SCSS JS">
+
+            <div class="card__text">
+              <h2 class="card__title">Parallax Slider HTML SCSS JS
+              </h2>
+              <p>Верстка HTML CSS JS</p>
+            </div>
+
+          </a>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="https://high-pass-nu.vercel.app/"
+            target="_blank">
+            <img src="./images/pass.png" alt="Фотостудия High pass">
+
+            <div class="card__text">
+              <h2 class="card__title">Фотостудия High pass
+              </h2>
+              <p>Верстка HTML CSS JS</p>
+            </div>
+
+          </a>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="https://argast.vercel.app/"
+            target="_blank">
+            <img src="./images/argast.png" alt="ЛИЧНЫЙ КАБИНЕТ">
+
+            <div class="card__text">
+              <h2 class="card__title">ЛИЧНЫЙ КАБИНЕТ
+              </h2>
+              <p>Верстка HTML CSS JS</p>
+            </div>
+
+          </a>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="https://cms-frontend-alpha.vercel.app/"
+            target="_blank">
+            <img src="./images/cms.png" alt="CMS - SHOPONLINE">
+
+            <div class="card__text">
+              <h2 class="card__title">CMS - SHOPONLINE
+              </h2>
+              <p>Верстка HTML CSS JS</p>
+            </div>
+
+          </a>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="https://shop-inspired.vercel.app/"
+            target="_blank">
+            <img src="./images/inspired.png" alt="интернет-магазин INSPIRED">
+
+            <div class="card__text">
+              <h2 class="card__title">интернет-магазин INSPIRED
+              </h2>
+              <p>Верстка HTML CSS JS API</p>
+            </div>
+
+          </a>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="https://beton-mocha.vercel.app/"
+            target="_blank">
+            <img src="./images/beton.png" alt="Три завода
+            по производству бетона">
+
+            <div class="card__text">
+              <h2 class="card__title">Три завода
+                по производству бетона</h2>
+              <p>Верстка HTML CSS JS</p>
+            </div>
+
+          </a>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="https://sitdownpls.vercel.app/"
+            target="_blank">
+            <img src="./images/pls.png" alt="интернет-магазин мебели">
+
+            <div class="card__text">
+              <h2 class="card__title">Интернет-магазин мебели
+              </h2>
+              <p>Верстка HTML CSS JS</p>
+            </div>
+
+          </a>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="https://blanchard-medv.vercel.app/"
+            target="_blank">
+            <img src="./images/galery.png" alt="Прикоснитесь к прекрасному">
+
+            <div class="card__text">
+              <h2 class="card__title">Прикоснитесь к прекрасному</h2>
+              <p>Верстка HTML CSS JS</p>
+
+            </div>
+
+          </a>
+        </article>
+           
+        
+
+      </div>
+
+
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="title">
+        Что <span class="title-decor">я умею</span>
+      </h2>
+      <div class="skills__row">
+        <div class="skills__column">
+          <h3 class="skills__title">
+            Мои навыки
+          </h3>
+
+          <div class="skills__box">
+            <div class="skills__content">
+
+              <div class="progress">
+                <h3>HTML<span>90%</span></h3>
+                <div class="bar bar-1"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>CSS<span>80%</span></h3>
+                <div class="bar bar-2"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>JavaScript<span>65%</span></h3>
+                <div class="bar bar-3"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>PHP<span>30%</span></h3>
+                <div class="bar bar-4"><span></span></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="skills__column">
+          <h3 class="skills__title">
+            Профессиональные навыки
+          </h3>
+
+          <div class="skills__box">
+            <div class="skills__content">
+
+              <div class="progress">
+                <h3>Конструктор Tilda<span>85%</span></h3>
+                <div class="bar bar-5"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>Веб-разработка<span>72%</span></h3>
+                <div class="bar bar-6"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>Графический дизайн<span>48%</span></h3>
+                <div class="bar bar-7"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>SEO Маркетинг<span>63%</span></h3>
+                <div class="bar bar-8"><span></span></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificate">
+
+      <h2 class="title">
+        Сертификаты
+      </h2>
+
+      <ul class="certificate__wrapper list-reset">
+
+        <li class="certificate__wrappe-item">
+          <img class="certificate__img" src="./images/certificate-1.png"
+            alt="Веб-верстка Базовый уровень">
+        </li>
+        <li class="certificate__wrappe-item">
+          <img class="certificate__img" src="./images/certificate-3.png"
+            alt="JavaScript. Базовый уровень">
+        </li>
+        <li class="certificate__wrappe-item">
+          <img class="certificate__img" src="./images/certificate-2.png"
+            alt="Веб-верстка Продвинутый уровень">
+        </li>
+
+      </ul>
+
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="contact__title title">
+        Связаться <span class="title-decor">со мной</span>
+      </h2>
+
+      <form id="contactForm" class="contact__form form" action="#"
+        method="POST">
+
+
+        <div class="form__input-box">
+          <div class="form__input-field">
+            <input class="form__input input-name" type="text"
+              data-validate-field="name" placeholder="Имя*" name="name"
+              id="name" required autocomplete="off">
+            <span class="form__input-focus"></span>
+          </div>
+          <div class="form__input-field">
+            <input class="form__input input-mail" type="email" id="email"
+              data-validate-field="email" placeholder="Email*" name="email"
+              required autocomplete="off">
+            <span class="form__input-focus"></span>
+          </div>
+        </div>
+
+        <div class="form__input-box">
+          <div class="form__input-field">
+            <input class="form__input input-tel" type="tel" id="tel"
+              data-validate-field="tel" placeholder="Телефон*" name="phone"
+              required autocomplete="off">
+            <span class="form__input-focus"></span>
+          </div>
+          <div class="form__input-field">
+            <input class="form__input" type="text" placeholder="Телеграм"
+              name="telegram" id="telegram" autocomplete="off">
+            <span class="form__input-focus"></span>
+          </div>
+        </div>
+
+        <div class="form__textarea">
+          <textarea id="message" name="message" cols="30" rows="10"
+            placeholder="Сообщение*" required></textarea>
+          <span class="form__input-focus"></span>
+        </div>
+
+        <div class="btn-box form__btn-box">
+          <button class="btn form__btn" type="submit">Отправить</button>
+        </div>
+      </form>
+
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <a class="logo" href="">
+      <img class="logo__img logo__img-footer" src="./images/logo.svg"
+        alt="логотип фронтенд разработк">
+    </a>
+
+    <div class="footer__text">
+      <p class="footer__copy">
+        Авторское право &copy; 2023 - 2024 | Все права защищены.
+
+      </p>
+    </div>
+
+
+
+    <div class="footer__icon-top">
+      <a class="footer__link-top" href="#home">
+        <i class='bx bx-up-arrow-alt'></i>
+      </a>
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
