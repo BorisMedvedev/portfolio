@@ -668,7 +668,6 @@ textarea:focus ~ .form__input-focus {
   background-color: var(--bg-color);
 }
 
-
 .logo__img-footer {
   max-width: 150px;
 }
@@ -739,7 +738,7 @@ textarea::placeholder {
   overflow: hidden;
   font-size: 1.1rem;
   font-weight: 700;
-  max-width: 500px;
+  max-width: 350px;
   width: 100%;
   transition: 0.5s;
   cursor: pointer;
@@ -789,7 +788,6 @@ textarea::placeholder {
   opacity: 0;
 }
 
-
 .js-validate-error-label {
   font-size: 1rem;
   display: block;
@@ -809,7 +807,7 @@ textarea::placeholder {
 }
 
 .certificate__img {
-  max-width:490px;
+  max-width: 490px;
   border: 0.2rem solid var(--main-color);
   border-radius: 0.8rem;
   margin-bottom: 10px;
@@ -929,7 +927,7 @@ textarea::placeholder {
     max-width: 100%;
   }
 
-    .home__descr {
+  .home__descr {
     max-width: 40rem;
   }
 
@@ -990,8 +988,7 @@ textarea::placeholder {
   }
 
   .certificate__img {
-    max-width:100%;
-
+    max-width: 100%;
   }
 
   .card__text {
@@ -1001,7 +998,7 @@ textarea::placeholder {
   .card__title {
     font-size: 2rem;
   }
-  
+
   .card__text p {
     font-size: 2rem;
   }
