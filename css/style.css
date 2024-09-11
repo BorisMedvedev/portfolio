@@ -1037,3 +1037,7 @@ textarea::placeholder {
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+.footer__social {
+  position: static;
+}
