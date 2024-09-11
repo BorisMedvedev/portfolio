@@ -738,7 +738,7 @@ textarea::placeholder {
   overflow: hidden;
   font-size: 1.1rem;
   font-weight: 700;
-  max-width: 600px;
+  max-width: 490px;
   width: 100%;
   transition: 0.5s;
   cursor: pointer;
